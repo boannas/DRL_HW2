@@ -1,0 +1,637 @@
+Setting seed: 42
+[47.429s] [ext: omni.physx.fabric-106.5.7] startup
+[2025-03-16 22:12:32,660][ogn_registration][INFO] - Looking for Python nodes to register in omni.physx.fabric-106.5.7
+[2025-03-16 22:12:32,660][ogn_registration][INFO] -  -> Registered nodes from module omni.physxfabric at /home/bubble/miniconda3/envs/tenggy/lib/python3.10/site-packages/isaacsim/extsPhysics/omni.physx.fabric
+[2025-03-16 22:12:32,660][ogn_registration][INFO] - Registering nodes in /home/bubble/miniconda3/envs/tenggy/lib/python3.10/site-packages/isaacsim/extsPhysics/omni.physx.fabric imported as omni.physxfabric with AutoNode config {}
+[2025-03-16 22:12:32,660][ogn_registration][INFO] - Registering Python Node Types from omni.physxfabric at /home/bubble/miniconda3/envs/tenggy/lib/python3.10/site-packages/isaacsim/extsPhysics/omni.physx.fabric in omni.physx.fabric
+[2025-03-16 22:12:32,660][ogn_registration][INFO] - ========================================================================================================================
+[2025-03-16 22:12:32,661][ogn_registration][INFO] - No dependency on omni.graph, therefore no nodes to register in omni.physx.fabric
+[2025-03-16 22:12:32,661][ogn_registration][INFO] - ...None found, no registration to do
+[2025-03-16 22:12:32,661][ogn_registration][INFO] - ...Skipping: No OmniGraph presence in the module omni.physxfabric - No nodes in this module, do not remember it
+[2025-03-16 22:12:32,661][ogn_registration][INFO] - Destroying registration record for omni.physx.fabric
+[2025-03-16 22:12:32,661][ogn_registration][INFO] - OGN register omni.physx.fabric-106.5.7 took 1047386.000000
+[INFO]: Base environment:
+	Environment device    : cuda:0
+	Environment seed      : 42
+	Physics step-size     : 0.005
+	Rendering step-size   : 0.01
+	Environment step-size : 0.01
+[INFO]: Time taken for scene creation : 1.753913 seconds
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 1
+	Environment spacing   : 4.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+[93m[1m2025-03-16 15:12:34 [49,621ms] [Warning] [isaaclab.assets.articulation.articulation] ImplicitActuatorCfg cart_actuator has set both effort_limit_sim and effort_limit.Only effort_limit_sim will be used for ImplicitActuators.
+[93m[1m2025-03-16 15:12:34 [49,621ms] [Warning] [isaaclab.assets.articulation.articulation] ImplicitActuatorCfg cart_actuator has set both velocity_limit_sim and velocity_limit.Only velocity_limit_sim will be used for ImplicitActuators.
+[93m[1m2025-03-16 15:12:34 [49,622ms] [Warning] [isaaclab.assets.articulation.articulation] ImplicitActuatorCfg pole_actuator has set both effort_limit_sim and effort_limit.Only effort_limit_sim will be used for ImplicitActuators.
+[93m[1m2025-03-16 15:12:34 [49,622ms] [Warning] [isaaclab.assets.articulation.articulation] ImplicitActuatorCfg pole_actuator has set both velocity_limit_sim and velocity_limit.Only velocity_limit_sim will be used for ImplicitActuators.
+  0%|                                                                                | 4/15000 [00:01<1:01:07,  4.09it/s]
+[93m[1m2025-03-16 15:12:36 [51,424ms] [Warning] [omni.hydra.scene_delegate.plugin] Calling getBypassRenderSkelMeshProcessing for prim /World/envs/env_0/Robot/slider/visuals.proto_mesh_0_id0 that has not been populated
+[INFO]: Time taken for simulation start : 2.289067 seconds
+[INFO] Command Manager:  <CommandManager> contains 0 active terms.
++------------------------+
+|  Active Command Terms  |
++--------+-------+-------+
+| Index  | Name  |  Type |
++--------+-------+-------+
++--------+-------+-------+
+[INFO] Recorder Manager:  <RecorderManager> contains 0 active terms.
++---------------------+
+| Active Recorder Terms |
++-----------+---------+
+|   Index   | Name    |
++-----------+---------+
++-----------+---------+
+[INFO] Action Manager:  <ActionManager> contains 1 active terms.
++----------------------------------+
+|  Active Action Terms (shape: 1)  |
++-------+--------------+-----------+
+| Index | Name         | Dimension |
++-------+--------------+-----------+
+|   0   | joint_effort |         1 |
++-------+--------------+-----------+
+[INFO] Observation Manager: <ObservationManager> contains 1 groups.
++------------------------------------------------------+
+| Active Observation Terms in Group: 'policy' (shape: (4,)) |
++------------+----------------------------+------------+
+|   Index    | Name                       |   Shape    |
++------------+----------------------------+------------+
+|     0      | joint_pos_rel              |    (2,)    |
+|     1      | joint_vel_rel              |    (2,)    |
++------------+----------------------------+------------+
+[INFO] Event Manager:  <EventManager> contains 1 active terms.
++-------------------------------------+
+| Active Event Terms in Mode: 'reset' |
++---------+---------------------------+
+|  Index  | Name                      |
++---------+---------------------------+
+|    0    | reset_cart_position       |
+|    1    | reset_pole_position       |
++---------+---------------------------+
+[INFO] Termination Manager:  <TerminationManager> contains 3 active terms.
++---------------------------------------+
+|        Active Termination Terms       |
++-------+--------------------+----------+
+| Index | Name               | Time Out |
++-------+--------------------+----------+
+|   0   | time_out           |   True   |
+|   1   | cart_out_of_bounds |  False   |
+|   2   | pole_out_of_bounds |  False   |
++-------+--------------------+----------+
+[INFO] Reward Manager:  <RewardManager> contains 2 active terms.
++------------------------------+
+|     Active Reward Terms      |
++-------+-------------+--------+
+| Index | Name        | Weight |
++-------+-------------+--------+
+|   0   | alive       |    1.0 |
+|   1   | terminating |   -2.0 |
++-------+-------------+--------+
+[INFO] Curriculum Manager:  <CurriculumManager> contains 0 active terms.
++----------------------+
+| Active Curriculum Terms |
++-----------+----------+
+|   Index   | Name     |
++-----------+----------+
++-----------+----------+
+Creating window for environment.
+[INFO]: Completed setting up the environment...
+avg_score:  0.001699999962002039
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  1%|▌                                                                              | 99/15000 [00:43<1:06:52,  3.71it/s]
+avg_score:  0.32979999262839554
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  1%|█                                                                             | 199/15000 [01:17<1:08:46,  3.59it/s]
+avg_score:  0.27349999388679863
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  2%|█▌                                                                            | 301/15000 [01:57<1:49:47,  2.23it/s]
+avg_score:  0.3101999930664897
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  3%|██                                                                            | 396/15000 [02:33<1:21:04,  3.00it/s]
+avg_score:  0.3024999932385981
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  3%|██▌                                                                           | 495/15000 [03:08<1:54:22,  2.11it/s]
+avg_score:  0.27169999392703176
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  4%|███                                                                           | 600/15000 [03:45<1:42:33,  2.34it/s]
+avg_score:  0.2613999941572547
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  5%|███▌                                                                          | 696/15000 [04:21<1:23:40,  2.85it/s]
+avg_score:  0.30579999316483736
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  5%|████▏                                                                         | 796/15000 [05:01<1:02:13,  3.80it/s]
+avg_score:  0.3206999928317964
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  6%|████▊                                                                           | 893/15000 [05:33<54:00,  4.35it/s]
+avg_score:  0.3465999922528863
+
+
+
+
+
+
+
+
+  7%|█████▏                                                                        | 996/15000 [05:49<1:06:40,  3.50it/s]
+avg_score:  0.3295999926328659
+
+
+
+
+
+
+
+  7%|█████▊                                                                         | 1097/15000 [06:03<32:49,  7.06it/s]
+avg_score:  0.3148999929614365
+
+
+
+
+
+
+
+
+  8%|██████▎                                                                        | 1198/15000 [06:19<37:58,  6.06it/s]
+avg_score:  0.3648999918438494
+
+
+
+
+
+
+
+
+
+  9%|██████▊                                                                        | 1296/15000 [06:38<38:47,  5.89it/s]
+avg_score:  0.41809999065473674
+
+
+
+
+
+
+
+
+
+  9%|███████▎                                                                       | 1394/15000 [06:56<36:36,  6.19it/s]
+avg_score:  0.43039999037981036
+
+
+
+
+
+
+
+
+
+ 10%|███████▉                                                                       | 1500/15000 [07:14<35:24,  6.36it/s]
+avg_score:  0.3836999914236367
+
+
+
+
+
+
+
+
+
+
+ 11%|████████▏                                                                    | 1597/15000 [07:34<1:15:17,  2.97it/s]
+avg_score:  0.488599989078939
+
+
+
+
+
+
+
+
+
+
+ 11%|████████▉                                                                      | 1700/15000 [07:54<46:56,  4.72it/s]
+avg_score:  0.4433999900892377
+
+
+
+
+
+
+
+
+
+
+ 12%|█████████▏                                                                   | 1799/15000 [08:14<1:06:10,  3.32it/s]
+avg_score:  0.46099998969584705
+
+
+
+
+
+
+
+
+
+
+ 13%|█████████▉                                                                     | 1898/15000 [08:34<47:56,  4.56it/s]
+avg_score:  0.47449998939409854
+
+
+
+
+
+
+
+
+
+
+
+
+ 13%|██████████▌                                                                    | 2001/15000 [08:58<47:50,  4.53it/s]
+avg_score:  0.552899987641722
+
+
+
+
+
+
+
+
+
+
+
+ 14%|███████████                                                                    | 2102/15000 [09:20<32:39,  6.58it/s]
+avg_score:  0.5095999886095524
+
+
+
+
+
+
+
+
+ 15%|███████████▌                                                                   | 2187/15000 [09:36<53:26,  4.00it/s]
+avg_score:  0.41229999078437685
+
+
+
+
+
+
+
+
+
+
+ 15%|████████████                                                                   | 2297/15000 [09:56<45:26,  4.66it/s]
+avg_score:  0.43819999020546674
+
+
+
+
+
+
+
+
+
+
+ 16%|████████████▋                                                                  | 2402/15000 [10:16<45:03,  4.66it/s]
+avg_score:  0.4396999901719391
+
+
+
+
+
+
+
+
+
+
+
+ 17%|████████████▊                                                                | 2498/15000 [10:38<1:17:22,  2.69it/s]
+avg_score:  0.5354999880306422
+
+
+
+
+
+
+
+
+
+
+
+
+ 17%|█████████████▎                                                               | 2596/15000 [11:02<1:11:59,  2.87it/s]
+avg_score:  0.5629999874159693
+
+
+
+
+
+
+
+
+
+
+ 18%|██████████████▏                                                                | 2703/15000 [11:22<33:11,  6.17it/s]
+avg_score:  0.4441999900713563
+
+
+
+
+
+
+
+
+
+ 19%|██████████████▊                                                                | 2802/15000 [11:40<54:58,  3.70it/s]
+avg_score:  0.412799990773201
+
+
+
+
+
+
+
+
+
+
+ 19%|███████████████▎                                                               | 2901/15000 [12:00<28:54,  6.98it/s]
+avg_score:  0.46529998959973456
+
+
+
+
+
+
+
+
+
+ 20%|███████████████▊                                                               | 2993/15000 [12:18<25:32,  7.83it/s]
+avg_score:  0.4278999904356897
+
+
+
+
+
+
+
+
+
+
+
+
+ 21%|████████████████▎                                                              | 3100/15000 [12:42<29:11,  6.80it/s]
+avg_score:  0.537399987988174
+
+
+
+
+
+
+
+
+
+
+
+
+ 21%|████████████████▍                                                            | 3200/15000 [13:05<1:03:52,  3.08it/s]
+avg_score:  0.5612999874539674
+
+
+
+
+
+
+
+
+
+ 22%|█████████████████▎                                                             | 3292/15000 [13:24<35:52,  5.44it/s]
+avg_score:  0.4619999896734953
+
+
+
+
+
+
+
+
+
+
+
+
+ 23%|█████████████████▉                                                             | 3398/15000 [13:48<43:20,  4.46it/s]
+avg_score:  0.5242999882809818
+
+
+
+
+
+
+
+
+
+
+
+
+ 23%|██████████████████▍                                                            | 3498/15000 [14:12<56:42,  3.38it/s]
+avg_score:  0.5674999873153865
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 24%|██████████████████▉                                                            | 3596/15000 [14:38<31:27,  6.04it/s]
+avg_score:  0.6305999859049917
+
+
+
+
+
+
+
+
+
+
+
+ 25%|███████████████████▍                                                           | 3694/15000 [15:00<33:15,  5.66it/s]
+avg_score:  0.5203999883681536
+
+
+
+
+
+
+
+
+
+
+ 25%|███████████████████▎                                                         | 3752/15000 [15:20<3:34:45,  1.15s/it]
+

@@ -1,0 +1,18 @@
+{
+    "os": "Linux-6.8.0-52-generic-x86_64-with-glibc2.35",
+    "python": "3.10.16",
+    "heartbeatAt": "2025-03-19T14:35:50.181497",
+    "startedAt": "2025-03-19T14:35:48.781875",
+    "docker": null,
+    "gpu": "NVIDIA GeForce RTX 4070 Ti SUPER",
+    "gpu_count": 1,
+    "cpu_count": 16,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/bubble/tenggy/FRA503-Deep-Reinforcement-Learning-for-Robotics/CartPole_4.5.0/scripts/RL_Algorithm/train_Q_Learning.py",
+    "codePath": "scripts/RL_Algorithm/train_Q_Learning.py",
+    "host": "fibo3",
+    "username": "bubble",
+    "executable": "/home/bubble/miniconda3/envs/tenggy/bin/python"
+}

@@ -1,0 +1,114 @@
+Setting seed: 42
+[14.816s] [ext: omni.physx.fabric-106.5.7] startup
+[2025-03-19 21:35:55,261][ogn_registration][INFO] - Looking for Python nodes to register in omni.physx.fabric-106.5.7
+[2025-03-19 21:35:55,261][ogn_registration][INFO] -  -> Registered nodes from module omni.physxfabric at /home/bubble/miniconda3/envs/tenggy/lib/python3.10/site-packages/isaacsim/extsPhysics/omni.physx.fabric
+[2025-03-19 21:35:55,261][ogn_registration][INFO] - Registering nodes in /home/bubble/miniconda3/envs/tenggy/lib/python3.10/site-packages/isaacsim/extsPhysics/omni.physx.fabric imported as omni.physxfabric with AutoNode config {}
+[2025-03-19 21:35:55,262][ogn_registration][INFO] - Registering Python Node Types from omni.physxfabric at /home/bubble/miniconda3/envs/tenggy/lib/python3.10/site-packages/isaacsim/extsPhysics/omni.physx.fabric in omni.physx.fabric
+[2025-03-19 21:35:55,262][ogn_registration][INFO] - ========================================================================================================================
+[2025-03-19 21:35:55,262][ogn_registration][INFO] - No dependency on omni.graph, therefore no nodes to register in omni.physx.fabric
+[2025-03-19 21:35:55,262][ogn_registration][INFO] - ...None found, no registration to do
+[2025-03-19 21:35:55,262][ogn_registration][INFO] - ...Skipping: No OmniGraph presence in the module omni.physxfabric - No nodes in this module, do not remember it
+[2025-03-19 21:35:55,262][ogn_registration][INFO] - Destroying registration record for omni.physx.fabric
+[2025-03-19 21:35:55,262][ogn_registration][INFO] - OGN register omni.physx.fabric-106.5.7 took 1044618.000000
+[INFO]: Base environment:
+	Environment device    : cuda:0
+	Environment seed      : 42
+	Physics step-size     : 0.005
+	Rendering step-size   : 0.01
+	Environment step-size : 0.01
+[INFO]: Time taken for scene creation : 1.696066 seconds
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 1
+	Environment spacing   : 4.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+[93m[1m2025-03-19 14:35:57 [16,969ms] [Warning] [isaaclab.assets.articulation.articulation] ImplicitActuatorCfg cart_actuator has set both effort_limit_sim and effort_limit.Only effort_limit_sim will be used for ImplicitActuators.
+[93m[1m2025-03-19 14:35:57 [16,969ms] [Warning] [isaaclab.assets.articulation.articulation] ImplicitActuatorCfg cart_actuator has set both velocity_limit_sim and velocity_limit.Only velocity_limit_sim will be used for ImplicitActuators.
+[93m[1m2025-03-19 14:35:57 [16,970ms] [Warning] [isaaclab.assets.articulation.articulation] ImplicitActuatorCfg pole_actuator has set both effort_limit_sim and effort_limit.Only effort_limit_sim will be used for ImplicitActuators.
+[93m[1m2025-03-19 14:35:57 [16,970ms] [Warning] [isaaclab.assets.articulation.articulation] ImplicitActuatorCfg pole_actuator has set both velocity_limit_sim and velocity_limit.Only velocity_limit_sim will be used for ImplicitActuators.
+[93m[1m2025-03-19 14:35:59 [18,701ms] [Warning] [omni.hydra.scene_delegate.plugin] Calling getBypassRenderSkelMeshProcessing for prim /World/envs/env_0/Robot/cart/visuals.proto_mesh_0_id0 that has not been populated
+[INFO]: Time taken for simulation start : 2.267720 seconds
+[INFO] Command Manager:  <CommandManager> contains 0 active terms.
++------------------------+
+|  Active Command Terms  |
++--------+-------+-------+
+| Index  | Name  |  Type |
++--------+-------+-------+
++--------+-------+-------+
+[INFO] Recorder Manager:  <RecorderManager> contains 0 active terms.
++---------------------+
+| Active Recorder Terms |
++-----------+---------+
+|   Index   | Name    |
++-----------+---------+
++-----------+---------+
+[INFO] Action Manager:  <ActionManager> contains 1 active terms.
++----------------------------------+
+|  Active Action Terms (shape: 1)  |
++-------+--------------+-----------+
+| Index | Name         | Dimension |
++-------+--------------+-----------+
+|   0   | joint_effort |         1 |
++-------+--------------+-----------+
+[INFO] Observation Manager: <ObservationManager> contains 1 groups.
++------------------------------------------------------+
+| Active Observation Terms in Group: 'policy' (shape: (4,)) |
++------------+----------------------------+------------+
+|   Index    | Name                       |   Shape    |
++------------+----------------------------+------------+
+|     0      | joint_pos_rel              |    (2,)    |
+|     1      | joint_vel_rel              |    (2,)    |
++------------+----------------------------+------------+
+[INFO] Event Manager:  <EventManager> contains 1 active terms.
++-------------------------------------+
+| Active Event Terms in Mode: 'reset' |
++---------+---------------------------+
+|  Index  | Name                      |
++---------+---------------------------+
+|    0    | reset_cart_position       |
+|    1    | reset_pole_position       |
++---------+---------------------------+
+[INFO] Termination Manager:  <TerminationManager> contains 3 active terms.
++---------------------------------------+
+|        Active Termination Terms       |
++-------+--------------------+----------+
+| Index | Name               | Time Out |
++-------+--------------------+----------+
+|   0   | time_out           |   True   |
+|   1   | cart_out_of_bounds |  False   |
+|   2   | pole_out_of_bounds |  False   |
++-------+--------------------+----------+
+[INFO] Reward Manager:  <RewardManager> contains 3 active terms.
++------------------------------+
+|     Active Reward Terms      |
++-------+-------------+--------+
+| Index | Name        | Weight |
++-------+-------------+--------+
+|   0   | alive       |    1.0 |
+|   1   | terminating |   -2.0 |
+|   2   | pole_pos    |   -1.0 |
++-------+-------------+--------+
+[INFO] Curriculum Manager:  <CurriculumManager> contains 0 active terms.
++----------------------+
+| Active Curriculum Terms |
++-----------+----------+
+|   Index   | Name     |
++-----------+----------+
++-----------+----------+
+Creating window for environment.
+[INFO]: Completed setting up the environment...
+  0%|                                                 | 0/15000 [00:00<?, ?it/s]
+Error executing job with overrides: []
+Traceback (most recent call last):
+  File "/home/bubble/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/utils/hydra.py", line 101, in hydra_main
+    func(env_cfg, agent_cfg, *args, **kwargs)
+  File "/home/bubble/tenggy/FRA503-Deep-Reinforcement-Learning-for-Robotics/CartPole_4.5.0/scripts/RL_Algorithm/train_Q_Learning.py", line 201, in main
+    writer.add_histogram("Q-Values/Per Action", np.array(agent.q_values.values()), episode)
+  File "/home/bubble/miniconda3/envs/tenggy/lib/python3.10/site-packages/torch/utils/tensorboard/writer.py", line 499, in add_histogram
+    histogram(tag, values, bins, max_bins=max_bins), global_step, walltime
+  File "/home/bubble/miniconda3/envs/tenggy/lib/python3.10/site-packages/torch/utils/tensorboard/summary.py", line 485, in histogram
+    hist = make_histogram(values.astype(float), bins, max_bins)
+TypeError: float() argument must be a string or a real number, not 'dict_values'
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
